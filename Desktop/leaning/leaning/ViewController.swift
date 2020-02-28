@@ -741,6 +741,8 @@ extension ViewController: MKMapViewDelegate{
         // メモ欄に入力がなければplaceholderを表示
         if editview.memoText.text == "" {
             editview.memoPlaceholder.isHidden = false
+        } else {
+            editview.memoPlaceholder.isHidden = true
         }
     }
     // pinimageを変更
