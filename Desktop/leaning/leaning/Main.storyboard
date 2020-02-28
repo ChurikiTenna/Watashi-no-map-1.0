@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qrO-GP-2o7">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="L4Q-k6-HGK">
+            <objects>
+                <viewController id="qrO-GP-2o7" customClass="ViewController" customModule="私のマップ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="m19-OT-XE8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="VVb-5c-Ns4"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="joW-eK-fG7"/>
+                    <connections>
+                        <segue destination="oZo-gQ-5F9" kind="presentation" identifier="goNext" modalPresentationStyle="fullScreen" id="JKh-3B-0si"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pJb-qQ-wzb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="312" y="-652"/>
+        </scene>
+        <!--TutorialPage1-->
+        <scene sceneID="dpM-64-AHd">
+            <objects>
+                <viewController storyboardIdentifier="TutorialPage1" title="TutorialPage1" id="Dhu-NP-uL9" customClass="TutorialPage1" customModule="私のマップ" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" opaque="NO" contentMode="scaleToFill" id="uXf-eO-hoU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <gestureRecognizers/>
+                        <viewLayoutGuide key="safeArea" id="TER-ci-Fgd"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZTD-th-JfZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="311.59420289855075" y="79.6875"/>
+        </scene>
+        <!--Tutorial Page2-->
+        <scene sceneID="jcC-Si-yqm">
+            <objects>
+                <viewController storyboardIdentifier="TutorialPage2" id="GCc-5f-9ER" customClass="TutorialPage2" customModule="私のマップ" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cnd-bs-ASK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <gestureRecognizers/>
+                        <viewLayoutGuide key="safeArea" id="WPc-S7-znr"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="7tz-iG-07n" appends="YES" id="D9W-dY-hOd"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jnb-H9-LAZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1016" y="80"/>
+        </scene>
+        <!--Tutorial Page3-->
+        <scene sceneID="08k-mz-NhY">
+            <objects>
+                <viewController storyboardIdentifier="TutorialPage3" id="1T8-Jh-lqt" customClass="TutorialPage3" customModule="私のマップ" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dMA-Gc-btH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="tRN-dp-YYa"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DTt-Ai-ghK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="7tz-iG-07n"/>
+            </objects>
+            <point key="canvasLocation" x="1712" y="80"/>
+        </scene>
+        <!--Page View Controller-->
+        <scene sceneID="Qjn-HV-h3a">
+            <objects>
+                <pageViewController storyboardIdentifier="PageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="oZo-gQ-5F9" customClass="PageViewController" customModule="私のマップ" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="lBL-J0-6Fb"/>
+                    <connections>
+                        <segue destination="qrO-GP-2o7" kind="presentation" identifier="goBack" modalPresentationStyle="fullScreen" id="nkY-a0-9AU"/>
+                    </connections>
+                </pageViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fjc-1q-QdI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-483" y="80"/>
+        </scene>
+    </scenes>
+</document>
