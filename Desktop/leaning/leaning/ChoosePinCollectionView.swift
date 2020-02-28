@@ -28,13 +28,13 @@ class ChoosePin: UIView {
         //コレクションビュー
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .vertical
-        let collectionView = UICollectionView(frame: CGRect(x: 0, y: 0, width: Screen.w-12, height: Screen.h-90), collectionViewLayout: layout)
+        let collectionView = UICollectionView(frame: CGRect(x: 6, y: 35, width: Screen.w-12, height: Screen.h-90), collectionViewLayout: layout)
         collectionView.alwaysBounceVertical = true
         collectionView.backgroundColor = UIColor(white: 0.95, alpha: 1)
         collectionView.clipsToBounds = true
         collectionView.layer.cornerRadius = 14
         collectionView.layer.borderColor = UserSetting.color3?.cgColor
-        collectionView.layer.borderWidth = 2
+        collectionView.layer.borderWidth = 3
         collectionView.allowsMultipleSelection = false
         collectionView.register(CollectionViewCell.self, forCellWithReuseIdentifier: "Cell")
         collectionView.register(CollectionViewHeader.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "Header")
@@ -55,7 +55,7 @@ class ChoosePin: UIView {
     func btnSetting() {
         closeBtn.setTitle("キャンセル", for: UIControl.State())
         closeBtn.setTitleColor(UIColor.black, for: UIControl.State())
-        closeBtn.frame = CGRect(x: Screen.w/2-70, y: Screen.h-85, width: 140, height: 30)
+        closeBtn.frame = CGRect(x: Screen.w/2-70, y: Screen.h-50, width: 140, height: 30)
         closeBtn.layer.cornerRadius = 8
         closeBtn.backgroundColor = UIColor.white
         addSubview(closeBtn)
