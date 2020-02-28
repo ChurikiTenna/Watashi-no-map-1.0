@@ -170,10 +170,10 @@ class EditView: UIView, UITextViewDelegate {
         }
         // ピンを選ぶパネルを出す
         let choosePin = ChoosePin()
-        choosePin.frame = CGRect(x: 6, y: Screen.h, width: Screen.w-12, height: Screen.h)
+        choosePin.frame = CGRect(x: 0, y: Screen.h, width: Screen.w, height: Screen.h)
         addSubview(choosePin)
         UIView.transition(with: choosePin, duration: 0.4, options: [.curveEaseIn], animations: {
-                            choosePin.frame = CGRect(x: 6, y: 35, width: Screen.w-12, height: Screen.h+60)
+                            choosePin.frame = CGRect(x: 0, y: 0, width: Screen.w, height: Screen.h)
             })
     }
     
