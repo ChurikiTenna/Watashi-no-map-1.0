@@ -54,7 +54,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UserSetting.color3 = colorArray[2]
         
         if let pinImage = realm.objects(UserPin.self).first {
-            print("userpospin: ", pinImage.name!)
             UserSetting.pinImage = pinImage.name
         } else {
             UserSetting.pinImage = "hitoB.png"
