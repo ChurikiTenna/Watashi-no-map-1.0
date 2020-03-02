@@ -11,17 +11,17 @@ import UIKit
 
 class SettingView: UIView {
     
-    private let color = UIColor(red: 168/255, green: 205/255, blue: 210/255, alpha: 1)
-    private let cellLength = (Screen.w-80)/7
+    let color = UIColor(red: 168/255, green: 205/255, blue: 210/255, alpha: 1)
+    let cellLength = (Screen.w-80)/7
     var btnB = UIButton(), btnY = UIButton(), btnP = UIButton()
     var btn1 = UIButton(), btn2 = UIButton(), btn3 = UIButton()
-    private let redSlider = UISlider(), greenSlider = UISlider(), blueSlider = UISlider()
-    private var btnArray: [[UIButton]] = [[], []]
-    private var sliderArray: [UISlider] = []
-    private var colorArray: [UIColor] = []
+    let redSlider = UISlider(), greenSlider = UISlider(), blueSlider = UISlider()
+    var btnArray: [[UIButton]] = [[], []]
+    var sliderArray: [UISlider] = []
+    var colorArray: [UIColor] = []
     var selectedPin = UIButton() // view controllerに渡す用
-    private let screen = UILabel()
-    private let label = UILabel()
+    let screen = UILabel()
+    let label = UILabel()
     let cancelBtn = UIButton()
     let createBtn = UIButton()
     // カラーパレット
