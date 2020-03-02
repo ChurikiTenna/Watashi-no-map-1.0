@@ -29,7 +29,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             })
 
         Realm.Configuration.defaultConfiguration = config
-        // h
+        
         let realm = try! Realm()
         
         var index = 0
